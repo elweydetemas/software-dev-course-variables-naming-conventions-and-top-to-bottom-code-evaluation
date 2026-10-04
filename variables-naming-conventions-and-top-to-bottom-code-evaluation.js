@@ -23,10 +23,19 @@ Things to reflect on:
   - How do clear variable names benefit team collaboration?
   
 */
-
-let a = "Alice";
-let b = 5;
-let c = 20;
-let d = a + " bought " + b + " items for $" + c + ".";
+/*
+let a = "Alice"; // Original variable name is unclear; it should be more descriptive.
+let b = 5;   // B is set to a letter, but the value declared is a number. It should be renamed to reflect its purpose.
+let c = 20;  // C is set to a letter, but the value declared is a number. It should be renamed to reflect its purpose.
+let d = a + " bought " + b + " items for $" + c + "."; //D should have more descriptive name to reflect its purpose.
 
 console.log(d);
+*/
+// Refactored Code with Descriptive Variable Names and Additional Variables
+let nameOfCustomer = "Alice"; // Renamed from 'a' to 'name' for clarity.
+let numberOfItems = 5; // Renamed from 'b' to 'numberOfItems' for clarity.
+let costOfItems = 20; // Renamed from 'c' to 'costOfItems' for clarity.
+let purchaseSummary = nameOfCustomer + " bought " + numberOfItems + " items for $" + costOfItems + "."; // Renamed from 'd' to 'purchaseSummary' for clarity.
+console.log(purchaseSummary);
+
+
